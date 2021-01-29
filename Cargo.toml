@@ -1,0 +1,26 @@
+[package]
+name = "package-iter"
+version = "0.0.1"
+edition = "2018"
+authors = ["Patrick Crummett"]
+license = "MIT OR Apache-2.0"
+description = "Iterator over Arch Linux packages"
+readme = "README.md"
+homepage = "https://github.com/pcrummett/package-iter"
+repository = "https://github.com/pcrummett/package-iter"
+exclude = [
+  "docs",
+  "examples",
+  ".git",
+  ".githooks",
+  ".github",
+  "tests",
+  "benches",
+  "target",
+  ".vscode"
+]
+
+[dependencies]
+tar = "0.4"
+nom = "6"
+flate2 = "1.0"
